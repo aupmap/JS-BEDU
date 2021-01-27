@@ -1,3 +1,4 @@
+/*
 var edad = 18;
 var  limVotar = 18;
 
@@ -30,3 +31,12 @@ switch(ciudad) {
         console.log('No encontre lo que buscas');
         break;
 }
+*/
+
+for(var i=1; i <=10; i+4) {
+console.log('i vale ', i);
+}
+
+for(var i=1; i <=10; i=i+3) {
+    console.log('i vale', i);
+    }
