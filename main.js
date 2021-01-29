@@ -55,6 +55,24 @@ for(var i = 0; i <= 100; i++) {
     if(isPrime) {
       console.log(counter);
     }
+
+function saludar(saludo, name) {
+    alert(saludo + ' ' + name);
+}
+
+saludar('Hola mundo', 'usuario')
+
+
+function perimeter(a,b) {
+    alert(a*b);
+}
+perimeter(2, 3)
+
+var i = 0;
 */
+
+
+
+
 
 
