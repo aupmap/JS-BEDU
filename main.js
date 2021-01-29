@@ -1,42 +1,60 @@
+
 /*
-var edad = 18;
-var  limVotar = 18;
+var day = 5;
+var text;
 
-if (edad>= limVotar) {
-    console.log('Puede votar');
-} else {
-	console.log('No puede votar');
-}
-
-var edad = 18;
-var  limVotar = 18;
-var ciudad= "cdmx";
-
-if (edad>= limVotar && ciudad === 'CDMX') {
-    console.log('Puede votar');
-} else {
-	console.log('No puede votar');
-}
-
-switch(ciudad) {
-    case 'CDMX':
-        console.log('Azcapotzalco, Benito Juarez...');
+switch (day) {
+  case 0:
+    text = "Sunday";
     break;
-    case 'Pachuca':
-        console.log('Mineral, Periodistas...');
+  case 1:
+    text = "Monday";
     break;
-    case 'Tulancingo':
-        cinsole.log('Centro, la Morena...');
-    default:
-        console.log('No encontre lo que buscas');
-        break;
+  case 2:
+    text = "Tuesday";
+    break;
+  case 3:
+    text = "Wednesday";
+    break;
+  case 4:
+    text = "Thursday";
+    break;
+  case 5:
+    text = "Friday";
+    break;
+  case 6:
+    text = "Saturday";
+    break;
+  default:
+    text = "Error";
+
 }
+
+var i = 0;
+
+while(i <= 200) {
+	console.log("Hello World");
+	i++;
+}
+
+for(var i = 0; i <= 100; i++) {
+    if(i % 2 === 0) {
+      console.log( i );
+    }
+  }
+
+  for (var counter = 2; counter <= 100; counter++) {
+    var isPrime = true;
+  
+    for (var i = 2; i <= counter; i++) {
+      if (counter % i === 0 && i !== counter) {
+        isPrime = false;
+      }
+    }
+  
+    if(isPrime) {
+      console.log(counter);
+    }
 */
 
-for(var i=1; i <=10; i+4) {
-console.log('i vale ', i);
-}
 
-for(var i=1; i <=10; i=i+3) {
-    console.log('i vale', i);
-    }
