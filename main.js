@@ -71,8 +71,39 @@ perimeter(2, 3)
 var i = 0;
 */
 
+//Declaracion de funciones
+const hola= 'hola usuario';
 
+function saludar(saludo, name= 'Pedro') {
+    //hola = 'adios';
+    //alert(saludo + ' ' + ' ' + 'hola' + name)
+    console.log(saludo + ' ' + name);
 
+    //return saludo + ' ' + name;
+}
 
+saludar('Hola mundo')
 
+let edad = 16;
 
+if (edad > 18) {
+    let ciudad = 'CDMX';
+    alert ('si puede votar porque tiene '+ edad);
+} else {
+    console.log('Ciudad', ciudad);
+}
+
+function padre(par1, par2) {
+    console.log('par1', par1);
+    console.log( 'par2', par2);
+
+    function hija1(para1) {
+        console.log('par1-hija', para1);
+    }
+    hija1('hola');
+   // console.log(para1);
+}
+
+padre(23,'ul');
+
+padre.hija('adios');
