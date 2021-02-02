@@ -113,16 +113,19 @@ function saludar(saludo, name= 'Pedro') {
 
 saludar('Hola mundo')
 
+*/
+var edad = 18;
+var limVotar = 18;
+var ciudad = 'CDMX'
 
-
-let edad = 16;
-
-if (edad > 18) {
-    let ciudad = 'CDMX';
-    alert ('si puede votar porque tiene '+ edad);
+if (edad >= limVotar && ciudad=='CDMX') {
+  console.log('puede votar');
 } else {
-    console.log('Ciudad', ciudad);
+    console.log('no puede votar');
 }
+/*
+
+
 
 
 function padre(par1, par2) {
@@ -173,8 +176,6 @@ function power(base, exponent) {
   return result;
 }
 
-*/
-
 function fibonacci(num) {
   if (num <= 1) return 1;
 
@@ -189,3 +190,5 @@ function fibonacciSequence(limit) {
   }
 }
 fibonacciSequence(6);
+
+*/
