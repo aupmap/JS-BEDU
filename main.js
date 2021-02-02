@@ -40,7 +40,7 @@ function perimeter(a,b) {
 }
 perimeter(2, 3)
 
-var i = 0;
+
 
 
 //Funcion ejemplo 3
@@ -60,23 +60,6 @@ var factorial = function fac(number) {
 }
 
 console.log(factorial(5)); // 120
-
-
-
-function padre(par1, par2) {
-    console.log('par1', par1);
-    console.log( 'par2', par2);
-
-    function hija1(para1) {
-        console.log('par1-hija', para1);
-    }
-    hija1('hola');
-   // console.log(para1);
-}
-
-padre(23,'ul');
-
-padre.hija('adios');
 
 
 
@@ -247,36 +230,97 @@ switch(autor) {
     break;
 }
 
-*/
+
+//Funcion ejemplo 2
+
+function perimeter(a,b) {
+  alert(a*b);
+}
+perimeter(2, 3)
+
+
+
 //Ejemplo 3 Switch
 
-Switch (figura) {
-
-  let figura = "circulo";
-  
-  function "cuadrado"(a){
-      let resCuadrado = a*a;
-      let a = 2
+  function pcuadrado(a){
+      let resCuadrado = a*4;
       return resCuadrado;
   }
-  function "triangulo"(a, b){
-      let resTriangulo = a*b*c;
-      let a = 2
-      let b = 3
-      let c = 4
+  function ptriangulo(a, b, c){
+      let resTriangulo = a+b+c;
       return resTriangulo;
   }
-  function "circulo"(r){
-      const pi =3.14;
-      let r = 10
-      let resCirculo= (2*pi) * r;
+  function pcirculo(r){
+      let resCirculo = (2*pi) * r;
+      const pi = 3.14;
       return resCirculo;
   }
-  function "rectangulo"(a, b){
+  function prectangulo(a, b){
       let resRectangulo = (2*a) + (2*b);
-      let a = 2
-      let b = 3
       return resRectangulo;
   }
-  }
 
+let figura = "cuadrado";
+  
+Switch(figura) {
+  case "cuadrado":
+    pcuadrado(2);
+    break;
+  case "triangulo":
+    ptriangulo(2, 4, 1);
+    break;
+  case "circulo":
+    pcirculo(5);
+    break;
+  case "rectangulo":
+    prectangulo(2,4);
+    break;
+  default:
+    alert('El perimetro de este objeto no se encuentra en la lista');
+}
+
+
+
+// Declaraciones de funciones
+
+// Orden de argumentos: no default...default
+
+/*
+//let hola= 'hola usuario';
+const hola = 'hola usuario';
+
+function saludar(saludo, name = 'Pedro') {
+    //let hola = 'adios';
+    //alert(saludo + ' ' + name + ' ' + hola + ' ' + adios);
+    console.log(saludo + ' ' + name);
+    //return saludo + ' ' + name;
+}
+saludar('Hola mundo');
+
+let edad = 19;
+
+if (edad > 18) {
+    let ciudad = 'CDMX'
+    alert('si puede votar porque tiene' + edad);
+}else {
+
+    console.log('Ciudad', ciudad);
+}
+/*
+//console.log(adios);
+
+*/
+function padre(par1, par2) {
+  console.log('par1', par1);
+  console.log( 'par2', par2);
+
+  function hija1(para1) {
+      console.log('par1-hija', para1);
+  }
+  hija1('hola');
+    console.log(para1);
+}
+
+padre(23,'ul');
+
+padre.hija('adios');
