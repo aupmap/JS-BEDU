@@ -1,5 +1,5 @@
 
-
+/*
 // Ejemplo Switch
 var day = 5;
 var text;
@@ -92,25 +92,10 @@ var factorial = function fac(number) {
 }
 
 console.log(factorial(5)); // 120
+*/
 
 
-//Declaracion de funciones
-
-
-
-const hola= 'hola usuario';
-
-function saludar(saludo, name= 'Pedro') {
-    //hola = 'adios';
-    alert(saludo + ' ' + ' ' + 'hola' + name)
-    console.log(saludo + ' ' + name);
-
-    return saludo + ' ' + name;
-}
-
-saludar('Hola mundo')
-
-
+/*
 var edad = 18;
 var limVotar = 18;
 var ciudad = 'CDMX'
@@ -333,3 +318,12 @@ try {
 } finally {
   console.log('Terminado');
 }
+*/
+
+// Declaraciones de funciones
+
+function saludar(saludo, name) {
+    alert(saludo + ' ' + name);
+}
+
+saludar('Hola mundo', 'usuario');
