@@ -1,3 +1,24 @@
+let figura = circulo;
+
+function cuadrado(a){
+    let resCuadrado = a*a;
+    return resCuadrado;
+}
+function triangulo(a, b){
+    let resTriangulo = a*b*c;
+    return resTriangulo;
+}
+function circulo(r){
+    const pi =3.14;
+    let resCirculo= (2*pi) * r;
+    return resCirculo;
+}
+function rectangulo(a, b){
+    let resRectangulo = (2*a) + (2*b);
+    return resRectangulo;
+}
+
+
 
 switch (figura) {
     case "circulo" 0:
@@ -25,37 +46,3 @@ switch (figura) {
         alert(a*b);
     };
   }
-
-//Declaracion de funciones
-const hola= 'hola usuario';
-
-function saludar(saludo, name= 'Pedro') {
-    //hola = 'adios';
-    //alert(saludo + ' ' + ' ' + 'hola' + name)
-    console.log(saludo + ' ' + name);
-
-    //return saludo + ' ' + name;
-}
-
-saludar('Hola mundo')
-
-let edad = 16;
-
-if (edad > 18) {
-    let ciudad = 'CDMX';
-    alert ('si puede votar porque tiene '+ edad);
-} else {
-    console.log('Ciudad', ciudad);
-}
-
-function padre(par1, par2) {
-    console.log('par1', par1);
-    console.log( 'par2' par2);
-
-    function hija1(par1) {
-        console.log('par1-hija', par1);
-    }
-    hija1('hola');
-}
-
-padre(23,'ul');
