@@ -1,5 +1,5 @@
 
-/*
+
 // Ejemplo Switch
 var day = 5;
 var text;
@@ -40,10 +40,7 @@ while(i <= 200) {
 }
 
 for(var i = 0; i <= 100; i++) {
-    if(i % 2 === 0) {
-      console.log( i );
-    }
-  }
+    if(i % 2 === 0) 
 
   for (var counter = 2; counter <= 100; counter++) {
     var isPrime = true;
@@ -123,7 +120,7 @@ if (edad >= limVotar && ciudad=='CDMX') {
 } else {
     console.log('no puede votar');
 }
-/*
+
 
 
 
@@ -162,7 +159,6 @@ switch(ciudad) {
     console.log("No encontre lo que buscaba");
     break;
 }
-/*
 
 //Ejemplo 2 Switch
 
