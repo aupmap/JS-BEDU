@@ -1,36 +1,4 @@
-
 /*
-// Ejemplo Switch
-var day = 5;
-var text;
-
-switch (day) {
-  case 0:
-    text = "Sunday";
-    break;
-  case 1:
-    text = "Monday";
-    break;
-  case 2:
-    text = "Tuesday";
-    break;
-  case 3:
-    text = "Wednesday";
-    break;
-  case 4:
-    text = "Thursday";
-    break;
-  case 5:
-    text = "Friday";
-    break;
-  case 6:
-    text = "Saturday";
-    break;
-  default:
-    text = "Error";
-
-}
-
 //Ejemplo while-for
 var i = 0;
 
@@ -92,20 +60,6 @@ var factorial = function fac(number) {
 }
 
 console.log(factorial(5)); // 120
-*/
-
-
-/*
-var edad = 18;
-var limVotar = 18;
-var ciudad = 'CDMX'
-
-if (edad >= limVotar && ciudad=='CDMX') {
-  console.log('puede votar');
-} else {
-    console.log('no puede votar');
-}
-
 
 
 
@@ -123,78 +77,6 @@ function padre(par1, par2) {
 padre(23,'ul');
 
 padre.hija('adios');
-
-
-
-
-//Ejemplo 1 Switch
-
-let ciudad = "Colima";
-
-switch(ciudad) {
-  case "AMG":
-    console.log("Zapopan, Guadalajara...");
-    break;
-  case "Colima":
-    console.log("Villa de Alvarez, Comala...");
-    break;
-  case "Puerto Vallarta":
-    console.log("Nuevo Vallarta, Bucerias...");
-  default:
-    console.log("No encontre lo que buscaba");
-    break;
-}
-
-//Ejemplo 2 Switch
-
-let autor = "Herman Hess";
-
-switch(autor) {
-  case "Emily Bronte":
-    console.log("Cumbres Borrascosas");
-    break;
-  case "Herman Hess":
-    console.log("La vida es Sueno, Lobo Estepario");
-    break;
-  case "Tolstoi":
-    console.log("Ana Karenina, Guerra y Paz");
-  default:
-    console.log("No encontramos titulos del autor");
-    break;
-}
-
-
-//Ejemplo 3 Switch
-
-Switch (figura) {
-
-  let figura = "circulo";
-  
-  function "cuadrado"(a){
-      let resCuadrado = a*a;
-      let a = 2
-      return resCuadrado;
-  }
-  function "triangulo"(a, b){
-      let resTriangulo = a*b*c;
-      let a = 2
-      let b = 3
-      let c = 4
-      return resTriangulo;
-  }
-  function "circulo"(r){
-      const pi =3.14;
-      let r = 10
-      let resCirculo= (2*pi) * r;
-      return resCirculo;
-  }
-  function "rectangulo"(a, b){
-      let resRectangulo = (2*a) + (2*b);
-      let a = 2
-      let b = 3
-      return resRectangulo;
-  }
-  }
 
 
 
@@ -318,7 +200,7 @@ try {
 } finally {
   console.log('Terminado');
 }
-*/
+
 
 // Declaraciones de funciones
 
@@ -327,3 +209,74 @@ function saludar(saludo, name) {
 }
 
 saludar('Hola mundo', 'usuario');
+
+
+//Ejemplo 1 Switch
+
+let ciudad = "Colima";
+
+switch(ciudad) {
+  case "AMG":
+    console.log("Zapopan, Guadalajara...");
+    break;
+  case "Colima":
+    console.log("Villa de Alvarez, Comala...");
+    break;
+  case "Puerto Vallarta":
+    console.log("Nuevo Vallarta, Bucerias...");
+  default:
+    console.log("No encontre lo que buscaba");
+    break;
+}
+
+//Ejemplo 2 Switch
+
+let autor = "Herman Hess";
+
+switch(autor) {
+  case "Emily Bronte":
+    console.log("Cumbres Borrascosas");
+    break;
+  case "Herman Hess":
+    console.log("La vida es Sueno, Lobo Estepario");
+    break;
+  case "Tolstoi":
+    console.log("Ana Karenina, Guerra y Paz");
+  default:
+    console.log("No encontramos titulos del autor");
+    break;
+}
+
+*/
+//Ejemplo 3 Switch
+
+Switch (figura) {
+
+  let figura = "circulo";
+  
+  function "cuadrado"(a){
+      let resCuadrado = a*a;
+      let a = 2
+      return resCuadrado;
+  }
+  function "triangulo"(a, b){
+      let resTriangulo = a*b*c;
+      let a = 2
+      let b = 3
+      let c = 4
+      return resTriangulo;
+  }
+  function "circulo"(r){
+      const pi =3.14;
+      let r = 10
+      let resCirculo= (2*pi) * r;
+      return resCirculo;
+  }
+  function "rectangulo"(a, b){
+      let resRectangulo = (2*a) + (2*b);
+      let a = 2
+      let b = 3
+      return resRectangulo;
+  }
+  }
+
