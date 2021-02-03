@@ -1,4 +1,4 @@
-
+/*
 
 // Ejemplo Switch
 var day = 5;
@@ -209,7 +209,7 @@ Switch (figura) {
       let b = 3
       return resRectangulo;
   }
-  }
+  
 
 
 
@@ -333,3 +333,20 @@ try {
 } finally {
   console.log('Terminado');
 }
+
+
+
+// Prompt
+
+(function(){
+  console.log('hola desde IIFE')
+})()
+*/
+
+//const entrada = Number(prompt('Proporciona tu edad:'));
+
+//console.log(Mensaje: ', entrada');
+
+let lista = [0,3,46,7,'antonio',[0,2,2],4,4]
+
+console.log(lista[4]);
