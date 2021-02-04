@@ -100,7 +100,7 @@ console.log(sequence);
 // → [1, 2, 3, 4]
 
 
-*/
+
 //Metodos ejemplo
 
 let lista = [0,3,46,7,'antonio',[0,2,2],'ul',4]
@@ -148,4 +148,44 @@ console.log(lista)
 lista.splice(4,5)
 
 console.log(lista)
+*/
 
+// Ejercicios: Imprimir contenido de la lista
+
+let array = [];
+
+console.log ("Agregar elemento, Eliminar elemento, Decir si existe el elemento, Imprimir el arreglo");
+
+let respuesta = Number(prompt("Elige una opcion"));
+
+switch (respuesta) {
+  case 1:
+  let valor = prompt("Ingresa un valor para agregar");
+  array.push(valor);
+  console.log(array);
+  break;
+
+  case 2:
+  let valor2 = prompt("Ingresa un valor para eliminar");
+  if (array_includes(valor2)){
+    let pos = array.indexOf(valor2);
+    array.splice(pos, 1);
+  }
+  console.log(array);
+  break;
+
+  case 3:
+  let valor3 = prompt("Ingresa un valor para ver si existe");
+  console.log(array.includes(valor3))
+  break;
+
+  case 4:
+  let valor4 = prompt("Imprime el arreglo");
+  console.log(array);
+  break;
+
+  default:
+  console.log("Opcion no valida");
+  break;
+
+}
