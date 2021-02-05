@@ -148,9 +148,21 @@ console.log(lista)
 lista.splice(4,5)
 
 console.log(lista)
-*/
+
+
+ function Humano(nacionalidad) {
+  this.nacionalidad = nacionalidad;
+  function hablar(mensaje) {
+    console.log(mensaje);
+  }
+  hablar("Hola");
+}
+let pedro = new Humano("Mexicano");
+console.log("humano", pedro);
+
 
 // Ejercicios: Imprimir contenido de la lista
+/*
 
 let array = [];
 
@@ -189,3 +201,51 @@ switch (respuesta) {
   break;
 
 }
+
+//Ejercicio  Instancia-Objetos (falta la salida)
+
+
+var Person = function(name, genre, age, tel) {
+  this.name = name;
+  this.genre = genre;
+  this.age = age;
+  this.tel = tel;
+  this.imprimir = () => {console.log()};
+}
+
+var john = new Person('Luis', M, '23', 112245);
+var mark = new Person('David', M, '35', 123354);
+var jane = new Person('Maria', F, '45', 124488);
+var john = new Person('Miguel', M, '17', 128896 );
+var mark = new Person('Ana', F, '33', 128872);
+
+console.log( 'luis');
+
+*/
+//Ejercicio Herencia
+
+var persona = function(name, age, grade, group) {
+  this.name = name;
+  this.age = age;
+  this.grade = grade;
+  this.group = group;
+  this.imprimir = () => {console.log()};
+}
+
+var1 persona = function(name) {
+  this.name = nombre;
+  }
+  var alumno = function(nombre, edad, grado, grupo) {
+  Person.super(this, nombre);
+  this.age = edad;
+  this.grade = grado;
+  this.group = grupo;
+  }
+
+var1 = new alumno('Luis', '23', 112245);
+var2 = new alumno('David', '35', 123354);
+var3 = new alumno('Maria', '45', 124488);
+var4 = new alumno('Miguel', '17', 128896 );
+var5 = new alumno('Ana', '33', 128872);
+
+console.log ('Luis');
