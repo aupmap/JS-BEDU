@@ -201,6 +201,7 @@ switch (respuesta) {
   break;
 
 }
+*/
 
 //Ejercicio  Instancia-Objetos (falta la salida)
 
@@ -210,18 +211,18 @@ var Person = function(name, genre, age, tel) {
   this.genre = genre;
   this.age = age;
   this.tel = tel;
-  this.imprimir = () => {console.log()};
+  //this.imprimir = () => {console.log()};
 }
 
-var john = new Person('Luis', M, '23', 112245);
-var mark = new Person('David', M, '35', 123354);
-var jane = new Person('Maria', F, '45', 124488);
-var john = new Person('Miguel', M, '17', 128896 );
-var mark = new Person('Ana', F, '33', 128872);
+var Luis = new Person(Luis, M, 23, 112245);
+var David = new Person(David, M, 35, 123354);
+var Maria = new Person(Maria, F, 45, 124488);
+var Miguel = new Person(Miguel, M, 17, 128896 );
+var Ana = new Person(Ana, F, 33, 128872);
 
-console.log( 'luis');
+console.log(ne Person);
 
-*/
+/*
 //Ejercicio Herencia
 
 var persona = function(name, age, grade, group) {
@@ -249,3 +250,143 @@ var4 = new alumno('Miguel', '17', 128896 );
 var5 = new alumno('Ana', '33', 128872);
 
 console.log ('Luis');
+
+
+// Ejercicio Transformando objetos en arreglos
+
+var car = {
+  brand: 'Nissan',
+  model: 'Versa',
+  year: 2020
+}
+
+console.log(car);
+
+function keyValuePairs(obj) {
+  var keys = Object.keys(obj);
+  var pairs = [];
+
+  for(var i = 0; i < keys.length; i++) {
+    pairs.push( [keys[i], obj[keys[i]]] )
+  }
+
+  return pairs;
+}
+
+var result = keyValuePairs(car);
+
+console.log(result);
+
+
+function arrayToObject(arr) {
+  var obj = {};
+
+  for(var i = 0; i < arr.length; i++) {
+    obj[arr[i][0]] = arr[i][1]
+  }
+
+  return obj;
+}
+
+console.log(obj);
+
+/*
+//Objetos Ejemplo
+
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990,
+	calculateAge: function(birthYear) {
+		var today = new Date();
+		var year = today.getFullYear();
+
+		return year - birthYear;
+	}
+}
+
+console.log( john.calculateAge(1990) );	// 30
+
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990,
+	calculateAge: function() {
+		var today = new Date();
+		var year = today.getFullYear();
+
+		this.age = year - this.birthYear;
+	}
+}
+console.log( john );
+/*
+Valor actual
+{
+  firstName: "John",
+  lastName: "Doe",
+  birthYear: 1990,
+  calculateAge: ƒ
+}
+
+
+john.calculateAge();
+
+console.log( john );
+/*
+Después de llamar el método calculateAge()
+{
+  firstName: "John",
+  lastName: "Doe",
+  birthYear: 1990,
+  age: 30,
+  calculateAge: ƒ
+}
+
+
+var singers = [
+  { name: 'Steven Tyler', band: 'Aerosmith', born: 1948 },
+  { name: 'Karen Carpenter', band: 'The Carpenters', born: 1950 },
+  { name: 'Kurt Cobain', band: 'Nirvana', born: 1967 },
+  { name: 'Chris Cornell', band: 'Soundgarden', born: 1964 },
+];
+
+function pluck(list, propertyName) {
+  }
+
+console.log( pluck(singers, 'name') );
+// ["Steven Tyler", "Karen Carpenter", "Kurt Cobain", "Chris Cornell"]
+
+console.log( pluck(singers, 'band') );
+// ["Aerosmith", "The Carpenters", "Nirvana", "Soundgarden"]
+
+console.log( pluck(singers, 'born') );
+// [1948, 1950, 1967, 1964]
+
+
+Solución
+
+function pluck(list, propertyName) {
+  var values = [];
+
+  for (var i = 0; i < list.length; i++) {
+    values.push( list[i][propertyName] );
+  }
+
+  return values;
+}
+
+
+var Person = function(name) {
+  this.name = name;
+}
+
+var Developer = function(name, skills, yearsOfExperience) {
+	Person.call(this, name);
+
+	this.skills = skills;
+	this.yearsOfExperience = yearsOfExperience;
+}
+
+var john = new Developer('John', 'JavaScript', 10);
+
+console.log( john );
