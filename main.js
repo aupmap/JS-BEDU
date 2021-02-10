@@ -557,11 +557,7 @@ var Person = function(name, genre, age, tel) {
   //this.imprimir = () => {console.log()};
 }
 
-var Luis = new Person(Luis, M, 23, 112245);
-var David = new Person(David, M, 35, 123354);
-var Maria = new Person(Maria, F, 45, 124488);
-var Miguel = new Person(Miguel, M, 17, 128896 );
-var Ana = new Person(Ana, F, 33, 128872);
+k
 
 console.log(new Person);
 
@@ -789,7 +785,7 @@ function arrayToObject(arr) {
 arrayToObject("Ana", "Juan", "Pedro", "Miguel", "Maria", "Daniel");
 console.log(obj);
 
-*/
+
 //Ejercicio 2  Agenda
 
 let lista = [];
@@ -858,7 +854,7 @@ do {
   }
 } while (respuesta != 2);
 
-/*
+
 console.log ("Agregar alumno, Eliminar alumno, Buscar alumno, Modificar lista de alumnos");
 
 let respuesta = Number(prompt("Elige una opcion: 1.  Agregar alumno 2. Eliminar alumno 3. Buscar alumno 4. Ver lista de alumnos"));
@@ -961,3 +957,65 @@ let alumno = {
     correo: dan@gmail.com
   }
 */
+
+// Primera funcion tiene efectos colaterales y segunda con funcion es una Funcion pura
+
+/*
+
+let numeros2 = [];
+
+for (let i = 0; i < numeros.length; i++) {
+  numeros2.push(numeros[i] * 2);
+}
+/*
+let numeros = [3,4,6,7,8,93,4];
+
+function dobleNumero(arreglo) {
+  let numeros2 = []
+  for (let i = 0; i < numeros.length; i++) {
+  numeros2.push(numeros[i] * 2);
+  }
+  return numeros2;
+}
+
+const personas = dobleNumero(numeros);
+console.log(numeros2);
+
+*/
+//Ejercicio 
+let usuarios = [
+{name: 'Ana', edad: 53, hobbies: [equitacion]}
+{name: 'Alex', edad: 14, hobbies: [foto]}
+{name: 'Dani', edad: 65, hobbies: [pintura]}
+{name: 'Vic', edad: 12, hobbies: [disenio]}
+{name: 'Sandy', edad: 45, hobbies: [cantar]}
+{name: 'Tomy', edad: 60, hobbies: [bailar]}
+{name: 'Beto', edad: 25, hobbies: [balet]}
+{name: 'Carl', edad: 30, hobbies: [natacion]}
+{name: 'Peter', edad: 27, hobbies: [musica]}
+{name: 'Jin', edad: 45, hobbies: [caminata]}
+];
+
+let personaMayor = [];
+for(let persona of usuarios) {
+  if (persona.edad) > 17 {
+    persona.Mayor.push(persona)
+  }else{}
+  
+}
+
+//Prueba 1
+//persona = {name: 'Ana', edad: 53, hobbies: [equitacion]}
+//persona.edad = 53
+//push({name: 'Ana', edad: 53, hobbies: [equitacion]})
+//personaMayor es igual [{name: 'Ana', edad: 53, hobbies: [equitacion]}]
+
+//persona = {{name: 'Alex', edad: 14, hobbies: [foto]}}
+//persona.edad = 14
+//personaMayor es igual [{name: 'Alex', edad: 14, hobbies: [foto]}], [{name: 'Ana', edad: 53, hobbies: [equitacion]}];
+
+
+//MAP 
+let numeros = [3,4,6,7,8,93,4];
+
+
