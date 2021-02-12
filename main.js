@@ -773,8 +773,8 @@ switch (respuesta) {
 
 }
 
-/*
-//Duda conversion de arreglos aobjetos
+
+//Duda conversion de arreglos a objetos
 
 function arrayToObject(arr) {
   var obj = {};
@@ -855,108 +855,7 @@ do {
 } while (respuesta != 2);
 
 
-console.log ("Agregar alumno, Eliminar alumno, Buscar alumno, Modificar lista de alumnos");
-
-let respuesta = Number(prompt("Elige una opcion: 1.  Agregar alumno 2. Eliminar alumno 3. Buscar alumno 4. Ver lista de alumnos"));
-
-switch (respuesta) {
-  case 1:
-  let alumno = prompt("Ingresa el nombre del alumno a agregar");
-  lista.push(alumno);
-  console.log("El alumno " + alumno + " se ha agregado a la lista: " + lista);
-  break;
-
-  case 2:
-  let alumno2 = prompt("Ingresa el nombre del alumno a eliminar");
-  lista.pop(alumno2);
-  console.log("El alumno " + alumno2 + " se ha a eliminado de la lista: " + lista);
-  break;
-
-  case 3:
-  let alumno3 = prompt("Ingresa el nombre del alumno que buscas");
-    if (lista.includes(alumno3)){
-      console.log("El alumno " + alumno3 + " sí se encuentra en la lista: " + lista)
-    }else{
-      console.log("El alumno no se encuentra en la lista: " + lista)
-    }
-   break;
-
-  case 4:
-  console.log("Lista de alumnos: " + lista);
-  break;
-
-  default:
-  console.log("Opcion no valida");
-  break;
-
-}
-
-/*
-// Objetos alumno
-
-let alumno = {
-  nombre: '';
-  apellido: '';
-  celular: '';
-  domicilio: '';
-  telefono: '';
-  correo: '';
-}
-
-  let Ana = {
-  nombre: 'Ana',
-  apellido: 'Diaz',
-  celular: '11223344',
-  domicilio: 'Camio al Olvido 6',
-  telefono: '123456',
-  correo: ana@gmail.com
-  }
-
-  let Juan = {
-    nombre: 'Juan',
-    apellido: 'Perez',
-    celular: '22334455',
-    domicilio: 'Prado Pinos 45',
-    telefono: '234567',
-    correo: ana@gmail.com
-  }
-
-  let Pedro = {
-    nombre: 'Pedro',
-    apellido: 'Padilla',
-    celular: '33445566',
-    domicilio: 'Olivos 37',
-    telefono: '345678',
-    correo: pedro@gmail.com
-  }
-
-  let Miguel = {
-    nombre: 'Miguel',
-    apellido: 'Gomez',
-    celular: '44556677',
-    domicilio: 'Carretera Mexico 4525',
-    telefono: '456789',
-    correo: mike@gmail.com
-  }
-
-  let Maria = {
-    nombre: 'Maria',
-    apellido: 'Gutierrez',
-    celular: '55667788',
-    domicilio: 'Coraza 856',
-    telefono: '567891',
-    correo: mary@gmail.com
-  }
-
-  let Daniel = {
-    nombre: 'Daniel',
-    apellido: 'Davila',
-    celular: '66778899',
-    domicilio: 'Ovelisco 112',
-    telefono: '678912',
-    correo: dan@gmail.com
-  }
-*/
+//Programacion funcional
 
 // Primera funcion tiene efectos colaterales y segunda con funcion es una Funcion pura
 
@@ -981,8 +880,8 @@ function dobleNumero(arreglo) {
 const personas = dobleNumero(numeros);
 console.log(numeros2);
 
-*/
-//Ejercicio 
+/*
+//Ejercicio Funciones puras, inmutabilidad
 let usuarios = [
 {name: 'Ana', edad: 53, hobbies: [equitacion]}
 {name: 'Alex', edad: 14, hobbies: [foto]}
@@ -1004,6 +903,7 @@ for(let persona of usuarios) {
   
 }
 
+
 //Prueba 1
 //persona = {name: 'Ana', edad: 53, hobbies: [equitacion]}
 //persona.edad = 53
@@ -1015,7 +915,42 @@ for(let persona of usuarios) {
 //personaMayor es igual [{name: 'Alex', edad: 14, hobbies: [foto]}], [{name: 'Ana', edad: 53, hobbies: [equitacion]}];
 
 
-//MAP 
+//MAP
 let numeros = [3,4,6,7,8,93,4];
 
 
+// Ejercicio Previous
+
+let numeros = 
+  [
+    { nombre: 'Maria', calificaciones: [9,9,7,8,10] },
+    { nombre: 'Antonio', calificaciones: [9,8,7,8,10] },
+    { nombre: 'Juan', calificaciones: [9,9,7,8,2] },
+    { nombre: 'Luis', calificaciones: [9,9,7,8] },
+    { nombre: 'Ana', calificaciones: [9,9,7,8,10] },
+    { nombre: 'Maria', calificaciones: [9,9,8,10,5] },
+    { nombre: 'Pedro', calificaciones: [7,9,7,8,10] },
+    { nombre: 'Julio', calificaciones: [6,0,7,8,10] },
+];
+
+console.log(numeros.reduce((previous, current, currentIndex, currentArrey) => {
+  if (index % 2 === 0) {
+    return current * 2
+  }
+  return previous;
+}))
+*/
+//DOM
+//console.log(document)
+//document.write('hola mundo')
+//document.getElementsByid('Header');
+//Header.innerHTML = 'Este texto es nuevo';
+
+//console.log(header)
+
+const clases = ['aqua','blue','gold','gray','green'];
+//Math.floor(Math.random() * (clases.length - 0 + 1)) + 0;
+
+function colorAleatorio(id);
+  const botton = document.getElementsByid(id);
+  botton.style.bgcolor
