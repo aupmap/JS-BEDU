@@ -986,6 +986,7 @@ const elementos = [];
 
 function guardaValor() {
   const input = document.getElementsByTagName('input')[0];
+  console.log(input.value)
   if (isNaN(Number(input.value))) {
     elementos.push(Number(input.value))
   }else {
