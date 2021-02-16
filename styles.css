@@ -1,0 +1,20 @@
+.rojo {
+    background-color: red;
+}
+.azul {
+    background-color:blue
+}
+.negro {
+    background-color: black;
+}
+.verde {
+    background-color:green}
+.cafe {
+    background-color:brown}
+
+.container {
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-around;
+}

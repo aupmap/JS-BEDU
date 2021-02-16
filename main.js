@@ -940,17 +940,57 @@ console.log(numeros.reduce((previous, current, currentIndex, currentArrey) => {
   return previous;
 }))
 */
+
 //DOM
 //console.log(document)
 //document.write('hola mundo')
-//document.getElementsByid('Header');
-//Header.innerHTML = 'Este texto es nuevo';
 
-//console.log(header)
+//Consulta de colecciones, nodos y estilos. Agrega y  elimina elementos de un a coleccion
 
-const clases = ['aqua','blue','gold','gray','green'];
+
+//const header = document.getElementById('header');
+//header.innerHTML = 'Este texto es nuevo';
+
+/*
+console.log(header)
+
+console.log(document.getElementsByClassName('lieElement'))
+const lis = document.getElementsByClassName('lieElement')
+//const lis = Arrey.from(document.getElementsByClassName('lieElement'))
+
+lis[2].style.color = 'pink';
+lis[0].remove();
+*/
+
+//Ejemplo clases
+
+const clases = ['rojo','azul','negro','verde','cafe'];
 //Math.floor(Math.random() * (clases.length - 0 + 1)) + 0;
+// 1.25
+//1
 
-function colorAleatorio(id);
-  const botton = document.getElementsByid(id);
-  botton.style.bgcolor
+//1.75
+//2
+
+function colorAleatorio(id) {
+  const boton = document.getElementById(id);
+  const color = Math.floor(Math.random() * (clases.length - 0 + 1)) + 0;
+  //console.log('parametro', id)
+  console.log(color);
+  //boton.style.backgroundColor = clases[color];
+  boton.classList.add(clases[color]);
+  //boton.innerHTML;
+}
+
+const elementos = [];
+
+function guardaValor() {
+  const input = document.getElementsByTagName('input')[0];
+  if (isNaN(Number(input.value))) {
+    elementos.push(Number(input.value))
+  }else {
+    elementos.push(input.value);
+  }
+}
+
+elementos.forEach(elemento => document.write(`<h2>${elemento}</h2>`));

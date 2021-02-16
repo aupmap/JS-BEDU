@@ -11,3 +11,7 @@
     background-color:gray}
 .rojo {
     background-color:green}
+
+.container {
+display: flex;
+}
