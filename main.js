@@ -972,6 +972,7 @@ const clases = ['rojo','azul','negro','verde','cafe'];
 //1.75
 //2
 
+/*
 function colorAleatorio(id) {
   const boton = document.getElementById(id);
   const color = Math.floor(Math.random() * (clases.length - 0 + 1)) + 0;
@@ -995,3 +996,11 @@ function guardaValor() {
 }
 
 elementos.forEach(elemento => document.write(`<h2>${elemento}</h2>`));
+*/
+
+//Ejercicio
+function presiona (id) {
+  console.log(document.getElementById(id));
+  console.log(document.getElementsById(id).parentNode)
+}
+
