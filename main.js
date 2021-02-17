@@ -964,7 +964,7 @@ lis[0].remove();
 
 //Ejemplo clases
 
-const clases = ['rojo','azul','negro','verde','cafe'];
+//const clases = ['rojo','azul','negro','verde','cafe'];
 //Math.floor(Math.random() * (clases.length - 0 + 1)) + 0;
 // 1.25
 //1
@@ -996,11 +996,18 @@ function guardaValor() {
 }
 
 elementos.forEach(elemento => document.write(`<h2>${elemento}</h2>`));
-*/
 
-//Ejercicio
-function presiona (id) {
-  console.log(document.getElementById(id));
-  console.log(document.getElementsById(id).parentNode)
+
+//Ejercicio Imprimir nodo, Imprimir el nodo padre, Crear elemento a partir de un click
+function presiona(id) {
+  //console.log(document.getElementById(id));
+  console.log(document.getElementById(id).parentNode);
+
 }
 
+const variable = document.createElement('h2');
+variable.id = 'nuevoElemento';
+variable.innerHTML = 'Este es un h2';
+
+document.body.appendChild(variable);
+*/

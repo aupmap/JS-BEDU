@@ -20,11 +20,11 @@ width: 100%;
 justify-content: space-around;
 }
 */
-.container {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 200px;
+div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
-
